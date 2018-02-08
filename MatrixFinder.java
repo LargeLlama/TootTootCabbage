@@ -56,8 +56,8 @@ public class MatrixFinder {
 		int target = 0;
 		long curr = 0;
 		int sum = 0;
-		for(int i = 1; i < 11; i++){
-			for(int j = 0; j < 1000000; j++){
+		for(int i = 50; i < 10000; i+=50){
+			for(int j = 0; j < 100; j++){
 				target = rtrnRandom(i * i);
 				//System.out.println();
 				matrix = randomMatrixGen(i);
@@ -72,7 +72,9 @@ public class MatrixFinder {
 				linSearch(matrix, target);
 				sum += System.nanoTime() - curr;
 			}
-			System.out.println(sum);
+			
+			System.out.println(i + "," + sum);
+			sum = 0;
 		}
 	}
 }
