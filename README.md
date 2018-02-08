@@ -1,13 +1,13 @@
 # TootTootCabbage 
-# Rubin Peci, Andrew Shao, Bill Ni 
+### Rubin Peci, Andrew Shao, Bill Ni 
  
-# Hypothesis:
+## Hypothesis:
 Empirical runtime would be approximately linear with some possible discrepancies
  
-# Background:
+## Background:
 We are trying to determine whether a matrix finder algorithm is O(n) time or not
  
-# Test Methodology: 
+## Test Methodology: 
  
 Matrix Size = 50 -> 10000, increment 50: 50, 100, 150, 200,..., 9950, 10000 
  
@@ -18,7 +18,7 @@ Recorded time at search function end
  
 Output to CSV file 
  
-# Results
+## Results
  
 
-# Conclusions
+## Conclusions
