@@ -21,22 +21,30 @@ Essentially, the algorithm will run in *O(n)* time, where the amount of time it 
  
 ## Test Methodology: 
  
-We start with a *50x50* matrix, and run a various number of trials of our algorithm, keeping track of how long it took to run and dividing that by 100 to get the average time.  
+We start with a *500x500* matrix, and run a various number of trials of our algorithm, keeping track of how long it took to run and dividing that by 100 to get the average time.  
 
-We then increment the size of the array by 50  
-For example, the next run would be 100 trials of a 100x100 matrix, and then 100 trials of a 150x150 matrix...    
+We then increment the size of the array by 500  
+For example, the next run would be 10 trials of a 1000x1000 matrix, and then 10 trials of a 1500x1500 matrix...    
 
-And so on and so forth  
-We reached a variety of sizes, which can all be seen in our *raw_data* file
-All sizes were >= 3000, with the maximum being 6600
-Past this point, our machines took too long to actually print the data (we were running up to 100 trials for each size at one point)
+And so on and so forth until we reached a matrix of size 10000  
   
-These will be outputted to a .csv file, which is stored in the folder *raw_data*
+These were outputted to a .csv file, which were stored in the folder *raw_data*
+
+Our *raw_data* folder also contains a folder called *old_data* that has data from an older method that was inefficent due to the test size being far too large  
+In many of those cases, we were running up to 100 trials for each matrix size and only incrementing by 50 - most of the time our computers would take too long to actually print out to the very end.  
+
+Though it is not used in our final results, it is important to look at the data and also understand why our testing method was inefficent.
 
 ## Results  
-All of our results can be seen organized [here] (https://docs.google.com/spreadsheets/d/1XvStXDj2gqjJ0mAwMfi8f4sbaL79i_ZEd0IYBT-UacU/edit?usp=sharing)
+All of our results can be seen organized [here] (https://docs.google.com/spreadsheets/d/1XvStXDj2gqjJ0mAwMfi8f4sbaL79i_ZEd0IYBT-UacU/edit?usp=sharing)  
+There are two spreadsheets - the one titled *new data* is what contains the results that are considered for the experiment.  
 
-Here is a graph of our results, with trend lines  
+The other one, *old data*, has results from the previous method that was mentioned
+
+Here is a graph of our results, with trend lines.
+Note that each line represents the average of 10 trials for each matrix size.
+![alt text](http://google.com)
+
   
 ###### WAITING ON IMAGE UPLOAD!
 

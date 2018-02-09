@@ -44,7 +44,7 @@ public class MFDriver {
 		
 		int sum = 0;	//store the sum of the time in nanoseconds
 
-		for(int i = 50; i < 10000; i+=500){
+		for(int i = 500; i <= 10000; i+=500){
 			for(int j = 0; j < 10; j++){
 				target = rtrnRandom(i * i);		//get random int value that can be in the matrix
 
@@ -54,7 +54,7 @@ public class MFDriver {
 				MatrixFinder.linSearch(matrix, target); //run our algorithm
 				sum += System.nanoTime() - curr; 		//calc the diff in time to get the time elapsed
 			}
-			sum = sum / 100; //this is because we ran 100 trials and we want the average for ONE trial	
+			sum = sum / 10; //this is because we ran 100 trials and we want the average for ONE trial	
 			System.out.println(i + "," + sum);	//print out the data in a .csv friendly format
 			sum = 0;	//reset the value of sum
 		}
