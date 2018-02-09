@@ -1,5 +1,5 @@
-# TootTootCabbage 
-### Rubin Peci, Andrew Shao, Bill Ni 
+# TootTootCabbage :smiling_imp: :exclaimation:  
+### Rubin Peci :sweat_drops:, Andrew Shao :v:, Bill Ni :hankey:
 #### APCS pd.2
 ##### Lab00
  
