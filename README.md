@@ -38,7 +38,7 @@ In many of those cases, we were running up to 100 trials for each matrix size an
 Though it is not used in our final results, it is important to look at the data and also understand why our testing method was inefficent.
 
 ## Results  
-All of our results can be seen organized [here] (https://docs.google.com/spreadsheets/d/1XvStXDj2gqjJ0mAwMfi8f4sbaL79i_ZEd0IYBT-UacU/edit?usp=sharing)  
+All of our results can be seen organized [here](https://docs.google.com/spreadsheets/d/1XvStXDj2gqjJ0mAwMfi8f4sbaL79i_ZEd0IYBT-UacU/edit?usp=sharing)  
 There are two spreadsheets - the one titled *new data* is what contains the results that are considered for the experiment.  
 
 The other one, *old data*, has results from the previous method that was mentioned
