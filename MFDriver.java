@@ -1,4 +1,12 @@
+//Team TootTootCabbage
+//Wubin Peco
+//Bill Ni the Science Guy
+//Andrew Shao-lin Monk
+
+//lab00 - Ma che cosa i dati dicono?
+
 public class MFDriver {
+
 	public static int[][] randomMatrixGen(int size){
 		int[][] rtrnArr = new int[size][size];
 		int lim = size;
@@ -29,29 +37,26 @@ public class MFDriver {
 	}
 
 	public static void main(String[] args) {
-		int[][] matrix;
-		int target = 0;
-		long curr = 0;
-		int sum = 0;
-		for(int i = 50; i < 10000; i+=50){
-			for(int j = 0; j < 100; j++){
-				target = rtrnRandom(i * i);
-				//System.out.println();
-				matrix = randomMatrixGen(i);
-				// for(int[] r : matrix){
-				// 	for(int c : r){
-				// 		System.out.print(c + "  ");
-				// 	}
-				// 	System.out.println();
-				// }
-				//System.out.println(target);
-				curr = System.nanoTime();
-				MatrixFinder.linSearch(matrix, target);
-				sum += System.nanoTime() - curr;
-			}
+		
+		int[][] matrix;	//store the matrix we want to search
+		int target = 0;	//store the random value we want to find
+		long curr = 0;	//store the time in nanoseconds
+		
+		int sum = 0;	//store the sum of the time in nanoseconds
+
+		for(int i = 50; i < 10000; i+=500){
+			for(int j = 0; j < 10; j++){
+				target = rtrnRandom(i * i);		//get random int value that can be in the matrix
+
+				matrix = randomMatrixGen(i); 	//generate the random matrix
 			
-			System.out.println(i + "," + sum);
-			sum = 0;
+				curr = System.nanoTime();		//store the current time
+				MatrixFinder.linSearch(matrix, target); //run our algorithm
+				sum += System.nanoTime() - curr; 		//calc the diff in time to get the time elapsed
+			}
+			sum = sum / 100; //this is because we ran 100 trials and we want the average for ONE trial	
+			System.out.println(i + "," + sum);	//print out the data in a .csv friendly format
+			sum = 0;	//reset the value of sum
 		}
 	}
 }
